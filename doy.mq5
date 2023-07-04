@@ -47,14 +47,14 @@ int OnInit()
 
 	ResetLastError();
 	// May 31
-	// config.Deserialize("{\"config\": {\"spred\": 20,\"balance\": 100000,\"pivot_1\": \"27200\",\"pivot_2\": \"27100\",\"pivot_3\": \"26720\",\"leverage\": 10,\"stop_loss\": 650,\"takeprofit\": \"2000\",\"pivot_range\": 200,\"take_profit\": 0,\"size_percent\": \"2\",\"pivot_1_grids\": 5,\"pivot_2_grids\": 5,\"tsl_tp_points\": 100000,\"stop_all_profit\": 0.1,\"pips_per_interval\": 100,\"quantity_per_grid\": 0.73},\"phase_1\": [{\"price\": 27250,\"qty\": 0.73,\"tsl\": 100000,\"stop_loss\": 26650,\"order\": 27050,\"action\": \"buy\"},{\"price\": 27050,\"qty\": 0.73,\"tsl\": 100000,\"order\": 27250,\"action\": \"sell\",\"stop_loss\": 27650}],\"phase_2\": {\"27050\": {\"qty\": 1.46,\"take_profit\": 26650,\"order\": 27250,\"action\": \"buy\",\"stop_loss\": 27650},\"27250\": {\"qty\": 1.46,\"take_profit\": 27650,\"order\": 27050,\"action\": \"sell\",\"stop_loss\": 26650}},\"phase_3\": {\"26950\": {\"qty\": 1.46,\"take_profit\": 26650,\"order\": 27350,\"action\": \"buy\",\"stop_loss\": 27650},\"27050\": {\"qty\": 0.73,\"take_profit\": 26650,\"order\": 26950,\"action\": \"sell\",\"stop_loss\": 27650},\"27250\": {\"qty\": 0.73,\"take_profit\": 27650,\"order\": 27350,\"action\": \"buy\",\"stop_loss\": 26650},\"27350\": {\"qty\": 1.46,\"take_profit\": 27650,\"stop_loss\": 26650,\"action\": \"sell\",\"order\": 26950}}}");
+	// config.Deserialize("{\"config\": {\"spred\": 20,\"balance\": \"100000\",\"pivot_1\": \"27080\",\"pivot_2\": \"26980\",\"pivot_3\": \"25240\",\"support\": \"26650\",\"leverage\": \"20\",\"stop_loss\": 650,\"resistance\": \"26960\",\"takeprofit\": \"200\",\"pivot_range\": 200,\"take_profit\": 0,\"size_percent\": \"3\",\"pivot_1_grids\": 5,\"pivot_2_grids\": 5,\"tsl_tp_points\": \"10000\",\"stop_all_profit\": 0.1,\"pips_per_interval\": \"100\",\"quantity_per_grid\": 2.21},\"phase_1\": [{\"price\": 27130,\"qty\": 2.21,\"tsl\": \"10000\",\"stop_loss\": 26530,\"order\": 26930,\"action\": \"buy\"},{\"price\": 26930,\"qty\": 2.21,\"tsl\": \"10000\",\"order\": 27130,\"action\": \"sell\",\"stop_loss\": 27530}],\"phase_2\": {\"27130\": {\"qty\": 4.42,\"take_profit\": 27530,\"order\": 26930,\"action\": \"sell\",\"stop_loss\": 26530},\"26930\": {\"qty\": 4.42,\"take_profit\": 26530,\"order\": 27130,\"action\": \"buy\",\"stop_loss\": 27530}},\"phase_3\": {\"27130\": {\"qty\": 2.21,\"take_profit\": 27530,\"order\": 27230,\"action\": \"buy\",\"stop_loss\": 26530},\"27230\": {\"qty\": 4.42,\"take_profit\": 27530,\"stop_loss\": 26530,\"action\": \"sell\",\"order\": 26830},\"26830\": {\"qty\": 4.42,\"take_profit\": 26530,\"order\": 27230,\"action\": \"buy\",\"stop_loss\": 27530},\"26930\": {\"qty\": 2.21,\"take_profit\": 26530,\"order\": 26830,\"action\": \"sell\",\"stop_loss\": 27530}}\r\n}");
 	// Feb 27 Test
 	// config.Deserialize("{\"config\": {\"spred\": 20,\"balance\": 100000,\"pivot_1\": \"23600\",\"pivot_2\": \"23500\",\"resistance\": \"23600\",\"support\": \"23500\",\"pivot_3\": \"26720\",\"leverage\": 10,\"stop_loss\": 650,\"takeprofit\": \"2000\",\"pivot_range\": 200,\"take_profit\": 0,\"size_percent\": \"2\",\"pivot_1_grids\": 5,\"pivot_2_grids\": 5,\"tsl_tp_points\": 10000,\"stop_all_profit\": 0.1,\"pips_per_interval\": 100,\"quantity_per_grid\": 0.84},\"phase_1\": [{\"price\": 23650,\"qty\": 0.84,\"tsl\": 100000,\"stop_loss\": 23050,\"order\": 23450,\"action\": \"buy\"},{\"price\": 23450,\"qty\": 0.84,\"tsl\": 100000,\"order\": 23650,\"action\": \"sell\",\"stop_loss\": 24050}],\"phase_2\": {\"23450\": {\"qty\": 1.68,\"take_profit\": 23050,\"order\": 23650,\"action\": \"buy\",\"stop_loss\": 24050},\"23650\": {\"qty\": 1.68,\"take_profit\": 24050,\"order\": 23450,\"action\": \"sell\",\"stop_loss\": 23050}},\"phase_3\": {\"23350\": {\"qty\": 1.68,\"take_profit\": 23050,\"order\": 23750,\"action\": \"buy\",\"stop_loss\": 24050},\"23450\": {\"qty\": 0.84,\"take_profit\": 23050,\"order\": 23350,\"action\": \"sell\",\"stop_loss\": 24050},\"23650\": {\"qty\": 0.84,\"take_profit\": 24050,\"order\": 23750,\"action\": \"buy\",\"stop_loss\": 23050},\"23750\": {\"qty\": 1.68,\"take_profit\": 24050,\"stop_loss\": 23050,\"action\": \"sell\",\"order\": 23350}}}");
 	// May 27 Test
 	// config.Deserialize("{\"config\": {\"spred\": 20,\"balance\": 100000,\"pivot_1\": \"26800\",\"pivot_2\": \"26700\",\"pivot_3\": \"26720\",\"leverage\": 10,\"stop_loss\": 650,\"takeprofit\": \"2000\",\"pivot_range\": 200,\"take_profit\": 0,\"size_percent\": \"2\",\"pivot_1_grids\": 5,\"pivot_2_grids\": 5,\"tsl_tp_points\": 100000,\"stop_all_profit\": 0.1,\"pips_per_interval\": 100,\"quantity_per_grid\": 0.74},\"phase_1\": [{\"price\": 26850,\"qty\": 0.74,\"tsl\": 100000,\"stop_loss\": 26250,\"order\": 26650,\"action\": \"buy\"},{\"price\": 26650,\"qty\": 0.74,\"tsl\": 100000,\"order\": 26850,\"action\": \"sell\",\"stop_loss\": 27250}],\"phase_2\": {\"26650\": {\"qty\": 1.48,\"take_profit\": 26250,\"order\": 26850,\"action\": \"buy\",\"stop_loss\": 27250},\"26850\": {\"qty\": 1.48,\"take_profit\": 27250,\"order\": 26650,\"action\": \"sell\",\"stop_loss\": 26250}},\"phase_3\": {\"26550\": {\"qty\": 1.48,\"take_profit\": 26250,\"order\": 26950,\"action\": \"buy\",\"stop_loss\": 27250},\"26650\": {\"qty\": 0.74,\"take_profit\": 26250,\"order\": 26550,\"action\": \"sell\",\"stop_loss\": 27250},\"26850\": {\"qty\": 0.74,\"take_profit\": 27250,\"order\": 26950,\"action\": \"buy\",\"stop_loss\": 26250},\"26950\": {\"qty\": 1.48,\"take_profit\": 27250,\"stop_loss\": 26250,\"action\": \"sell\",\"order\": 26550}}}");
 	// April 05 test
-	// config.Deserialize("{\"config\":{\"spred\":20,\"balance\":100000,\"takeprofit\":20000,\"pivot_1\":28400,\"pivot_2\":28300,\"pivot_3\":28300,\"leverage\":10,\"stop_loss\":650,\"pivot_range\":200,\"take_profit\":0,\"size_percent\":1,\"pivot_1_grids\":5,\"pivot_2_grids\":5,\"tsl_tp_points\":10000,\"stop_all_profit\":0.1,\"pips_per_interval\":100,\"quantity_per_grid\":0.35},\"phase_1\":[{\"price\":28450,\"qty\":0.35,\"tsl\":100000,\"stop_loss\":27850,\"order\":28250,\"action\":\"buy\"},{\"price\":28250,\"qty\":0.35,\"tsl\":100000,\"order\":28450,\"action\":\"sell\",\"stop_loss\":28850}],\"phase_2\":{\"28450\":{\"qty\":0.7,\"take_profit\":28850,\"order\":28250,\"action\":\"sell\",\"stop_loss\":27850},\"28250\":{\"qty\":0.7,\"take_profit\":27850,\"order\":28450,\"action\":\"buy\",\"stop_loss\":28850}},\"phase_3\":{\"28450\":{\"qty\":0.35,\"take_profit\":28850,\"order\":28550,\"action\":\"buy\",\"stop_loss\":27850},\"28550\":{\"qty\":0.7,\"take_profit\":28850,\"stop_loss\":27850,\"action\":\"sell\",\"order\":28150},\"28150\":{\"qty\":0.7,\"take_profit\":27850,\"order\":28550,\"action\":\"buy\",\"stop_loss\":28850},\"28250\":{\"qty\":0.35,\"take_profit\":27850,\"order\":28150,\"action\":\"sell\",\"stop_loss\":28850}}}");
-	// init_orders();
+	config.Deserialize("{\"config\":{\"spred\":20,\"balance\":100000,\"takeprofit\":20000,\"pivot_1\":28400,\"pivot_2\":28300,\"pivot_3\":28300,\"leverage\":10,\"stop_loss\":650,\"pivot_range\":200,\"take_profit\":0,\"size_percent\":1,\"pivot_1_grids\":5,\"pivot_2_grids\":5,\"tsl_tp_points\":10000,\"stop_all_profit\":0.1,\"pips_per_interval\":100,\"quantity_per_grid\":0.35},\"phase_1\":[{\"price\":28450,\"qty\":0.35,\"tsl\":100000,\"stop_loss\":27850,\"order\":28250,\"action\":\"buy\"},{\"price\":28250,\"qty\":0.35,\"tsl\":100000,\"order\":28450,\"action\":\"sell\",\"stop_loss\":28850}],\"phase_2\":{\"28450\":{\"qty\":0.7,\"take_profit\":28850,\"order\":28250,\"action\":\"sell\",\"stop_loss\":27850},\"28250\":{\"qty\":0.7,\"take_profit\":27850,\"order\":28450,\"action\":\"buy\",\"stop_loss\":28850}},\"phase_3\":{\"28450\":{\"qty\":0.35,\"take_profit\":28850,\"order\":28550,\"action\":\"buy\",\"stop_loss\":27850},\"28550\":{\"qty\":0.7,\"take_profit\":28850,\"stop_loss\":27850,\"action\":\"sell\",\"order\":28150},\"28150\":{\"qty\":0.7,\"take_profit\":27850,\"order\":28550,\"action\":\"buy\",\"stop_loss\":28850},\"28250\":{\"qty\":0.35,\"take_profit\":27850,\"order\":28150,\"action\":\"sell\",\"stop_loss\":28850}}}");
+	init_orders();
 	draw_panel();
 
 	return (INIT_SUCCEEDED);
@@ -103,57 +103,6 @@ void OnChartEvent(const int id,
 	}
 }
 
-//+------------------------------------------------------------------+
-//|                                                                  |
-//+------------------------------------------------------------------+
-void fetch_config()
-{
-
-	int accountID = AccountInfoInteger(ACCOUNT_LOGIN);
-	string headersJ = "Content-Type: application/json\r\n";
-	char serverResult[];
-	string serverHeaders;
-
-	string serializedJson = StringFormat("{\"mt5_account_id\": %d}", accountID);
-
-	char post[];
-	StringToCharArray(serializedJson, post);
-
-	char resulta[], result[];
-	string serverHeader;
-
-	// char post[], result[];
-	ObjectSetInteger(0, button_id, OBJPROP_BGCOLOR, clrRed);
-	// int res = WebRequest("POST", url, cookie, NULL, 500, post, 0, result, headers);
-
-	int res = WebRequest("POST", url, "", headersJ, 5000, post, ArraySize(post), result, serverHeader);
-
-	if (res == -1)
-	{
-		Print("Error in WebRequest. Error code  =", GetLastError());
-		//--- Perhaps the URL is not listed, display a message about the necessity to add the address
-		MessageBox("Add the address '" + url + "' to the list of allowed URLs on tab 'Expert Advisors'", "Error", MB_ICONINFORMATION);
-	}
-	else
-	{
-		if (res == 200)
-		{
-			config.Deserialize(result);
-			Print(_result);
-			ObjectSetInteger(0, button_id, OBJPROP_BGCOLOR, clrGreen);
-			ObjectSetString(0, button_id, OBJPROP_TEXT, "STARTED");
-			init_orders();
-		}
-		else if (res == 401)
-		{
-			PrintFormat("Invalid MT5 Account ID");
-		}
-		else
-			PrintFormat("Downloading '%s' failed, error code %d", url, res);
-	}
-
-	Print("WebRequest =", res);
-}
 
 //+------------------------------------------------------------------+
 //|                                                                  |
@@ -213,7 +162,7 @@ void OnTick()
 			buy_addition = 50;
 			sell_addtion = -100;
 		}
-		else
+		else if (initial_position == "middle")
 		{
 			if (current_price >= config["config"]["resistance"].ToDbl())
 			{
